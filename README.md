@@ -37,6 +37,8 @@ A tour consists of points and drawings on the map. The points are selected on th
 
 **TODO** Screenshots
 
+[Tablet design draft](front-end/design/design_draft_tablet.svg)
+
 ### Tasks *(not yet defined)*
 - [ ] Define back end
 - [ ] Define front end
