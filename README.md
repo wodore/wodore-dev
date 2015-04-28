@@ -42,7 +42,7 @@ A tour consists of points and drawings on the map. The points are selected on th
 - [ ] Define front end
 - *more*
 
-## Route Groups
+## Groups
 Finally you can group different routes. In the example before we had only one day, we might create a second route for the second day and include both routes in a route group. It should also be possible to include even route groups into route groups. This way you can build larger groups for example for a one week trip with a few two days route groups.
 
 ### Screenshots
@@ -57,8 +57,8 @@ Finally you can group different routes. In the example before we had only one da
 # Technical Details
 
 ## Back-end
-The back-end is build on top of gae-init/gae-init which is initialization project for Google App Engine based on Python, Flask, RESTful, Bootstrap and tons of other cool stuff. The user management is also done by gae-init.
+The back-end is build on top of [gae-init](https://gae-init.appspot.com/) which is initialization project for Google App Engine based on Python, Flask, RESTful, Bootstrap and tons of other cool stuff. The user management is also done by gae-init.
 
 ## Front-end
-The final app should be a single page web application which works on mobiles, tables and computers. A key feature is to have a map with different tiles. Leaflet/Leaflet for the maps. Most tiles so far are based on the open street map ([OSM](https://www.openstreetmap.org), [Thunderforest](http://www.thunderforest.com/), [Refuges](http://maps.refuges.info/), [Stamen](http://maps.stamen.com/)), except for the swisstopo map (www.map.geo.admin.ch). Other good (hiking) tiles suggestions are welcome.
+The final app should be a single page web application which works on mobiles, tables and computers. A key feature is to have a map with different tiles. [Leaflet](http://leafletjs.com) is used for the maps. Most tiles so far are based on the open street map ([OSM](https://www.openstreetmap.org), [Thunderforest](http://www.thunderforest.com/), [Refuges](http://maps.refuges.info/), [Stamen](http://maps.stamen.com/)), except for the swisstopo map (www.map.geo.admin.ch). Other good (hiking) tiles suggestions are welcome.
 
