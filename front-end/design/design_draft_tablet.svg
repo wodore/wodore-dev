@@ -5238,7 +5238,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -5251,12 +5251,12 @@
     <image
        sodipodi:absref="/home/tobias/data/git/wodore-dev/front-end/design/swisstopo_map.jpg"
        xlink:href="swisstopo_map.jpg"
-       mask="none"
-       width="1266.3673"
-       height="741.92535"
-       id="image28207"
+       y="-172.12184"
        x="-540.18518"
-       y="-172.12184" />
+       id="image28207"
+       height="741.92535"
+       width="1266.3673"
+       mask="none" />
   </g>
   <g
      style="display:inline"
@@ -15166,7 +15166,7 @@
        x="-299.5051"
        y="-148.69641"
        inkscape:label="#rect2816"
-       inkscape:export-filename="/home/adm/tobias.burgherr/no_backup/appDesign/render2/frame50.png"
+       inkscape:export-filename="/home/tobias/data/git/wodore-dev/front-end/design/external/mobile_filter_route.png"
        inkscape:export-xdpi="150"
        inkscape:export-ydpi="150" />
   </g>
