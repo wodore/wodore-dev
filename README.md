@@ -24,6 +24,7 @@ A filter can be used to filter points by tags, often used tags come first.
 ### Screenshots
 
 **TODO** Screenshots
+![Add points tablet draf](https://lh6.googleusercontent.com/xv5D42l8FcP8pV6hBezrpvIpRDuGzSIzsdy8n6tkp8LnMA5Lhq6eQjcZayz2OivxupAbiFg3hCkCsWE=w1576-h625)
 
 ### Tasks *(not yet defined)*
 - [ ] Define back end
@@ -36,6 +37,8 @@ A tour consists of points and drawings on the map. The points are selected on th
 ### Screenshots
 
 **TODO** Screenshots
+
+[Tablet design draft](front-end/design/design_draft_tablet.svg)
 
 ### Tasks *(not yet defined)*
 - [ ] Define back end
