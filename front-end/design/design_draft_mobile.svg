@@ -4582,8 +4582,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="141.46481"
-     inkscape:cy="420.37991"
+     inkscape:cx="614.65729"
+     inkscape:cy="239.01854"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -4706,12 +4706,12 @@
     <image
        sodipodi:absref="/home/tobias/data/git/wodore-dev/front-end/design/swisstopo_map.jpg"
        xlink:href="swisstopo_map.jpg"
-       y="-172.12184"
-       x="-540.18518"
-       id="image28207"
-       height="741.92535"
+       mask="url(#mask5393)"
        width="1266.3673"
-       mask="url(#mask5393)" />
+       height="741.92535"
+       id="image28207"
+       x="-540.18518"
+       y="-172.12184" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -13929,7 +13929,8 @@
      id="layer2"
      inkscape:label="screens"
      sodipodi:insensitive="true"
-     transform="translate(300.5,149.6875)">
+     transform="translate(300.5,149.6875)"
+     style="display:inline">
     <path
        style="opacity:0.8;fill:#ffffff;fill-opacity:1;stroke:#000000"
        d="m -578.68523,-350.51954 0,1082.9063 961.65621,0 0,-1082.9063 -961.65621,0 z m 280.31246,203.06251 399,0 0,698.99999 -399,0 0,-698.99999 z"
