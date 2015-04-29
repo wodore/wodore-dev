@@ -11,7 +11,7 @@ The goal is not to have an website with many public tours (although this might b
 
 Next are the three basic levels of the application explained with all the tasks for each level. The application is still under development and not much is done yet but here is a short gif how it could look like in the end.
 
-![Mobile web app draft](https://lh4.googleusercontent.com/-aY6PngN7IoU/VUCKzaWrN6I/AAAAAAAAAKs/xAyMhn1HOog/w668-h1168-no/app_flow.gif)
+![Mobile web app draft](https://lh6.googleusercontent.com/-PRpFI_VLaPw/VUCS0zQ6gnI/AAAAAAAAAMc/uCH6WIjH32I/w240-h420-no/mobile_app_flow_small.gif)
 
 
 # Application Basics
