@@ -11,7 +11,7 @@ The goal is not to have an website with many public tours (although this might b
 
 Next are the three basic levels of the application explained with all the tasks for each level. The application is still under development and not much is done yet but here is a short gif how it could look like in the end.
 
-**TODO** Add web app gif
+![Mobile web app draft](https://lh4.googleusercontent.com/-aY6PngN7IoU/VUCKzaWrN6I/AAAAAAAAAKs/xAyMhn1HOog/w668-h1168-no/app_flow.gif)
 
 
 # Application Basics
@@ -23,8 +23,7 @@ A filter can be used to filter points by tags, often used tags come first.
 
 ### Screenshots
 
-**TODO** Screenshots
-![Add points tablet draf](https://lh6.googleusercontent.com/xv5D42l8FcP8pV6hBezrpvIpRDuGzSIzsdy8n6tkp8LnMA5Lhq6eQjcZayz2OivxupAbiFg3hCkCsWE=w1576-h625)
+**TODO** Add link to tablet version (animated)
 
 ### Tasks *(not yet defined)*
 - [ ] Define back end
