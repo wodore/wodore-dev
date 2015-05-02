@@ -15,7 +15,7 @@ Here is how a tag looks like:
 
 ```javascript
 { "tag": {
-    "id"        : "TagName",
+    "key"        : "TagName",
     "parent"    : "UserGroupKey", // if it is a usergroup tag it needs a parent
     "options"   : {               // tag options
       "color"    : "hex color code",
@@ -28,7 +28,7 @@ Here is how a tag looks like:
                                                       // This is used to give tag suggestions.
                                                       // This is updated on the global level 
                                                       // as well as local (user group level)
-      "replaceBy" : "TagName",  // Another tag which this one should be replaced by...
+      "replaceBy" : "replaceBy_key",  // A key to a replaceBy object ...
       }
     "approved"  : false,        // The tag is approbed for public tags
     "approveRequest" : false,
@@ -66,3 +66,23 @@ The same tag is saved for the user group with `"parent" : "xyz"`.
 
 If the same tags are used in another user group the gobal `relatedTo` and `cnt` would be updated, but not the tags with the usergroup *EasterTour*.
 
+Methods
+--------
+Every interaction with the tag model is done by methods. The basic methods are:
+- `get_name()`
+- `is_global()`
+- `set(attribute, name)`
+- `set_tag(name,options)`
+- `set_relatedTo(tag_names)`
+- `remove_relatedTo(tag_names)`
+- `set_approved(bool)`
+- `is_apprived()`
+- `get_counter()`
+- `incr_counter(incr=1)`
+- `decr_counter(decr=1)`
+
+Class methods:
+- `get_suggestions(tag,limit,scope)` scope is either global, group or both
+- `get_tags(user_group, min_counter, max_counter, oroder)`
+- `add_tags(tag_array)` is used for updates as well
+- `remove_tags(tag_array)`
