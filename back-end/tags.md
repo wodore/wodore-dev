@@ -86,3 +86,13 @@ Class methods:
 - `get_tags(user_group, min_counter, max_counter, oroder)`
 - `add_tags(tag_array)` is used for updates as well
 - `remove_tags(tag_array)`
+
+Concerns
+---------
+- Different groups with different icons (for the same tag). If this happens the icon of the current *active* group will be used.
+- Different languages and tags in general which mean the same. For example `hut` and `huette` or even `hütte`. If the tag is only used for one user group it is no problem, but for future extension it would be nice to have unique public tags. For this is the field `replaceBy`. If the tag is not  `approved` for the public it needs to be replaced by another tag, for example `huette` should be replaced by `hut`. If it was replaced once it can be suggested for other users the next time. This is not yet a concern.
+- Which tags to load;
+    - All tags
+    - Just the popular
+    - Depending on the user group
+    - ...
