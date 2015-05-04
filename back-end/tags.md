@@ -56,7 +56,8 @@ tag_key    : "Tag key", // consists of parent and id
 related_to : "Tag key", // consists of parent and id
 counter   : 0, // Tag counter (how oftern is it used)
 ```
-In future a third DB called `tag_approve_request_db` is probably used which saves all approve requests for a tags.
+In future two more databases are used. One called `tag_approve_request_db` which saves all approve requests for a tags.
+And another called `tag_replace_by_db` where tag replacements can be saved, for example for different languages.
 
 Example
 ----------
