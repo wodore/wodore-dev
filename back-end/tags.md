@@ -15,25 +15,32 @@ This are the public methods:
 
 `Tag` Methods
 -------------------
-- `constructor(self,name,icon=DEFAULT_TAG_ICON,color=DEFAULT_TAG_COLOR,parent="",approved=false,counter=1)`
+- `constructor(self, name, style={}, group=[], status=LOCAL, counter=1)`
 - `get_name()`
-- `is_global()`
-- `set(attribute, name)` icon, color, ...
-- `set_tag(name,options)`
-- `set_relatedTo(tag_names)`
-- `remove_relatedTo(tag_names)`
-- `set_approved(bool)`
-- `is_approved()`
+- `set_name(name)`
+- `set_style(style,group)`
+- `set_related_to(tag_names)`
+- `remove_related_to(tag_names)`
+- `get_status(status)`
+- `set_status(status)`
 - `get_counter()`
-- `incr_counter(incr=1)`
-- `decr_counter(decr=1)`
+- `_incr_counter(incr=1)`
+- `_decr_counter(decr=1)`
+
+A group is an array of groups, if the array is empty the global tag is used. 
+The simplest case is to have only one group: `[group1]` but more levels are supported: `[group1,group1a,group1aE]`.
+The `Tag` class makes sure that all tags are updated correctly (for every grup level). For example if the tag counter of `group1aE` is increased, all the other counter needs to be increased as well.
 
 `Tags` Methods
 ---------------
-- `get_suggestions(tag,limit,scope)` scope is either global, group or both
-- `get_tags(user_group, min_counter, max_counter, oroder)`
-- `add_tags(tag_array)` is used for updates as well
-- `remove_tags(tag_array)`
+- `get_suggestions(tags,limit,scope, json=false)` scope is either global, group or both
+- `get_tags(group, min_counter, max_counter, order, json=false)`
+- `add_tags(tags, auto_add_related_to=true, auto_counter = true, json=false)` 
+- `remove_tags(tags, auto_add_related_to=true, auto_counter = true, json=false)` 
+- `change_tags(add_tags , remove_tags, auto_add_related_to=true, auto_counter = true, json=false)` is used for updates as well
+
+`tags` is either a string array with tag names, an array with `Tag` objects, or if `json=true` a array with json tag objects.
+
 
 Tag Databases
 --------------
@@ -91,7 +98,7 @@ This results in the following table (`tag_db`)
 
 The  `tag_relation_db` looks like:
 
-| tag\_key          |  related\_to      | counter   
+| tag\_key         |  related\_to     | counter   
 | ---------------- | ---------------- | ------- 
 | peak             | over 2000        | 1
 | xyz/peak         | over 2000        | 1
